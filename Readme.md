@@ -25,7 +25,7 @@
 - 计算变换矩阵
 
     变换矩阵利用OpenCV提供的findHomography函数实现。该函数通过计算下式最小值得出变换矩阵。
-    $$\sum_i \left ( x'_i- \frac{h_{11} x_i + h_{12} y_i + h_{13}}{h_{31} x_i + h_{32} y_i + h_{33}} \right )^2+ \left ( y'_i- \frac{h_{21} x_i + h_{22} y_i + h_{23}}{h_{31} x_i + h_{32} y_i + h_{33}} \right )^2$$
+    ![](http://latex.codecogs.com/gif.latex?\\sum_i \\left ( x'_i- \\frac{h_{11} x_i + h_{12} y_i + h_{13}}{h_{31} x_i + h_{32} y_i + h_{33}} \\right )^2+ \\left ( y'_i- \\frac{h_{21} x_i + h_{22} y_i + h_{23}}{h_{31} x_i + h_{32} y_i + h_{33}} \\right )^2)
     我们得到变换矩阵
 $$
     H=\begin{pmatrix}
